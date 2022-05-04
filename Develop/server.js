@@ -6,8 +6,10 @@ const fs = require('fs');
 
 const express = require('express');
 
-const app = express();
+
 const PORT = process.env.PORT || 3001;
+const app = express();
+
 
 //enables access to public files such as JS and CSS
 app.use(express.static('public'));
