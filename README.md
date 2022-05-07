@@ -16,7 +16,7 @@ Finally, the entire application was deployed to Heroku.
     Since this module incorporates an express server, it has to be deployed using heroku instead of github pages.
 
 ## Demo
-<img src="public/NoteTaker Demo.gif" width="1000px" height="500px">
+<img src="public/NoteTaker Demo.gif">
 
 ## Deployed Link
 https://gentle-taiga-16262.herokuapp.com/
