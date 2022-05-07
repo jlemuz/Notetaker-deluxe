@@ -36,6 +36,10 @@ app.get("/notes", (req, res) => {
   res.sendFile(path.join(__dirname, "./public/notes.html"));
 });
 
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, './public/index.html'));
+});
+
 app.post("/api/notes", (req, res) => {
   //Uses the uniqid library to set the note ID
   req.body.id = uniqid();
