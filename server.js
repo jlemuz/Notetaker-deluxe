@@ -40,8 +40,8 @@ app.post("/api/notes", (req, res) => {
   //Uses the uniqid library to set the note ID
   req.body.id = uniqid();
 
-  // add animal to json file and animals array in this function
-  const animal = createNewNote(req.body, notes);
+  // add note to json file and notes array in this function
+  const note = createNewNote(req.body, notes);
 
   res.json(notes);
 });
